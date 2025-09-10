@@ -75,6 +75,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 0;
+            
         }
 
         .logo {
@@ -105,8 +106,8 @@
             box-shadow: var(--light-shadow); transition: all 0.3s ease;
         }
         .upload-card:hover { transform: translateY(-5px); }
-        #upload-section h1 { font-size: 2.8em; font-weight: 800; margin-bottom: 15px; }
-        #upload-section p { font-size: 1.1em; color: var(--light-text-secondary); max-width: 700px; margin: 0 auto 30px; }
+        #upload-section h1 { font-size: 2.1em; font-weight: 800; margin-bottom: 15px; }
+        #upload-section p { font-size: 1.1em; color: white; max-width: 700px; margin: 0 auto 30px; }
         .upload-area { border: 2px dashed var(--light-border); border-radius: 16px; padding: 30px; cursor: pointer; transition: all 0.3s ease; }
         .upload-area:hover, .upload-area.dragover { border-color: var(--primary-accent); background-color: rgba(59, 130, 246, 0.05); }
         .upload-btn {
@@ -129,7 +130,7 @@
         .spinner {
             width: 60px; height: 60px; border: 6px solid var(--light-border);
             border-top-color: var(--primary-accent); border-radius: 50%;
-            display: inline-block; animation: spin 1s linear infinite;
+            display: inline-block; animation: spin 0.3s linear infinite;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .loading-text { font-size: 1.4em; font-weight: 700; margin-top: 20px; }
@@ -345,7 +346,7 @@
         <main>
             <section id="upload-section">
                 <div class="upload-card">
-                    <h1 data-key="upload_title">أداة تحليل السيرة الذاتية</h1>
+                    <h1 data-key="upload_title">أداة تحليل السيرة الذاتية</h1> <STYle>H1{color:#8b5cf6;}</STYle>
                     <p data-key="upload_subtitle">ارفع سيرتك الذاتية واحصل على تقييم فوري، نصائح احترافية، وتوصيات مخصصة لتجاوز أنظمة الفلترة (ATS) وجذب انتباه مدراء التوظيف.</p>
                     <div class="upload-area" id="drop-zone">
                         <input type="file" id="file-input" accept=".pdf, .docx">
@@ -570,7 +571,7 @@ const translations = {
         upload_subtitle: "ارفع سيرتك الذاتية واحصل على تقييم فوري، نصائح احترافية، وتوصيات مخصصة لتجاوز أنظمة الفلترة (ATS) وجذب انتباه مدراء التوظيف.",
         upload_button: "🚀 اختر ملفك وحلله",
         upload_drag_drop: "أو قم بسحبه وإفلاته هنا (PDF, DOCX)",
-        jd_title: " عزّز تحليلك [[اختياري]]",
+        jd_title: " عزّز تحليلك ✨اختياري✨",
         jd_subtitle: "للحصول على أفضل النتائج، الصق الوصف الوظيفي للوظيفة التي تتقدم إليها.",
         jd_placeholder: "مثال: نبحث عن مطور برامج يتمتع بخبرة في JavaScript و React...",
         loading_text: "جاري التحليل بإستخدام الذكاء الاصطناعي...",
