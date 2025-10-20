@@ -106,7 +106,7 @@
             box-shadow: var(--light-shadow); transition: all 0.1s ease;
         }
         .upload-card:hover { transform: translateY(-5px); }
-        #upload-section h1 { font-size: 2.5em; font-weight: 900; margin-bottom: 10px; }
+        #upload-section h1 { font-size: 2.5em; font-weight: 900; margin-bottom: 10px;  }
        /* الوضع النهاري 🌞 */
 [data-theme="light"] #upload-section p {
     color: #000000; /* أسود */
@@ -129,7 +129,7 @@
         .upload-area { border: 3px dashed var(--light-border); border-radius: 16px; padding: 30px; cursor: pointer; transition: all 0.3s ease; }
         .upload-area:hover, .upload-area.dragover { border-color: var(--primary-accent); background-color: rgb(0, 0, 0); }
         .upload-btn {
-            background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent)); color: white; padding: 15px 40px;
+            background: linear-gradient(90deg, var(--primary-accent), var(--secondary-accent)); color: rgb(0, 0, 0); padding: 15px 40px;
             border: none; border-radius: 50px; font-size: 18px; font-weight: 700; cursor: pointer;
             transition: all 0.1s ease; box-shadow: 0 4px 15px  #fdbe33;
         }
@@ -415,7 +415,7 @@
                             </div>
                             <div class="metrics-grid"></div>
                              <div class="reset-btn-container">
-                                 <button class="upload-btn" id="reset-button-1" style="font-size: 16px; padding: 10px 30px;" data-key="analyze_another_cv">تحليل سيرة ذاتية أخرى</button>
+                                 <button class="upload-btn" id="reset-button-1" style="font-size: 16px; padding: 10px 30px;" data-key="analyze_another_cv">🔁تحليل سيرة ذاتية أخرى</button>
                              </div>
                         </div>
 
@@ -565,7 +565,7 @@ const translations = {
         tab_ats: "ATS Check",
         tab_template: "ATS Template",
         overall_score_label: "Overall Score",
-        analyze_another_cv: "Analyze Another CV",
+        analyze_another_cv: "🔁Analyze Another CV🔁",
         keywords_instruction: "✨✨Paste a job description on the main page to analyze keywords.✨✨",
         ats_title: "Applicant Tracking System (ATS) Compatibility",
         ats_description: "ATS is software used by companies to automatically filter CVs. An incompatible CV might get rejected before a human sees it.",
@@ -637,7 +637,7 @@ const translations = {
         tab_ats: "فحص ATS",
         tab_template: "قالب مقترح",
         overall_score_label: "التقييم الإجمالي",
-        analyze_another_cv: "تحليل سيرة ذاتية أخرى",
+        analyze_another_cv: "🔁تحليل سيرة ذاتية أخرى🔁",
         keywords_instruction: "✨✨الصق وصفًا وظيفيًا في الصفحة الرئيسية لتحليل الكلمات المفتاحية.✨✨",
         ats_title: "التوافق مع أنظمة تتبع المتقدمين (ATS)",
         ats_description: "الـ ATS هو برنامج تستخدمه الشركات لفلترة السير الذاتية آلياً. السيرة الذاتية غير المتوافقة قد يتم رفضها قبل أن تصل لعين بشرية.",
