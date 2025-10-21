@@ -148,7 +148,7 @@
         .spinner {
             width: 60px; height: 60px; border: 6px solid var(--light-border);
             border-top-color: var(--primary-accent); border-radius: 50%;
-            display: inline-block; animation: spin 0.1s linear infinite;
+            display: inline-block; animation: spin 0.5s linear infinite;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .loading-text { font-size: 1.4em; font-weight: 700; margin-top: 20px; }
@@ -382,7 +382,7 @@
                         <p style="margin-top: 15px; font-size: 0.9em;" data-key="upload_drag_drop">أو قم بسحبه وإفلاته هنا (PDF, DOCX)</p>
                     </div>
                      <div class="jd-section">
-                         <h2 data-key="jd_title"> 【عزّز تحليلك 【اختياري </h2>
+                         <h2 data-key="jd_title">عزّز تحليلك اختياري </h2>
                          <p class="jd-subtitle" data-key="jd_subtitle" style="color: var(--light-text-secondary); margin-bottom: 15px;">
                              للحصول على أفضل النتائج، الصق الوصف الوظيفي للوظيفة التي تتقدم إليها.
                          </p>
@@ -625,7 +625,7 @@ const translations = {
         upload_subtitle: "ارفع سيرتك الذاتية واحصل على تقييم فوري، نصائح احترافية، وتوصيات مخصصة لتجاوز أنظمة الفلترة (ATS) وجذب انتباه مدراء التوظيف.",
         upload_button: "🚀 اختر ملفك وحلله",
         upload_drag_drop: "أو قم بسحبه وإفلاته هنا (PDF, DOCX)",
-        jd_title: " عزّز تحليلك【إختياري】",
+        jd_title: "عزّز تحليلك【إختياري】",
         jd_subtitle: "للحصول على أفضل النتائج، الصق الوصف الوظيفي للوظيفة التي تتقدم إليها.",
         jd_placeholder: "مثال: نبحث عن مطور برامج يتمتع بخبرة في JavaScript و React...",
         loading_text: "جاري التحليل بإستخدام الذكاء الاصطناعي...",
@@ -755,7 +755,7 @@ function setTheme(theme) {
 
 function setupEventListeners() {
     DOMElements.uploadButton.addEventListener('click', () => DOMElements.fileInput.click());
-    DOMElements.dropZone.addEventListener('click', () => DOMElements.fileInput.click());
+    
     DOMElements.fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));
     
     ['dragover', 'drop'].forEach(eventName => DOMElements.dropZone.addEventListener(eventName, e => e.preventDefault()));
