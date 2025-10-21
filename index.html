@@ -213,7 +213,7 @@ body[data-theme="light"] .glass-card {
         body.rtl .metric-item { border-left: none; border-right: 4px solid; }
         .metric-item h4 { font-size: 1em; margin-bottom: 8px; }
         .metric-bar { height: 6px; background: rgba(0,0,0,0.1); border-radius: 3px; overflow: hidden; }
-        .metric-bar-inner { height: 100%; border-radius: 3px; width: 0%; transition: width 0.5s ease-out; }
+        .metric-bar-inner { height: 100%; border-radius: 3px; width: 0%; transition: width 0.3s ease-out; }
 
         /* Checklist Tab */
         .feedback-item { display: flex; gap: 15px; padding: 12px 0; border-bottom: 1px solid var(--light-border); }
@@ -403,7 +403,7 @@ body[data-theme="light"] .glass-card {
                 <div class="loading-container" id="loading-container">
                     <div class="spinner"></div>
                     <p class="loading-text" id="loading-text" data-key="loading_text">جاري التحليل بإستخدام الذكاء الاصطناعي...</p>
-                    <p class="loading-subtext" id="loading-subtext" data-key="loading_subtext">هذه العملية تستغرق ثانيتين فقط ... ⏳</p>
+                    <p class="loading-subtext" id="loading-subtext" data-key="loading_subtext">هذه العملية تستغرق ثانية فقط ... ⏳</p>
                 </div>
 
                 <div class="report-grid" id="report-grid">
@@ -860,7 +860,7 @@ async function extractText(file) {
 }
  
 async function startAnalysis(text, fileName, fileType) {
-    await new Promise(res => setTimeout(res,));
+    await new Promise(res => setTimeout(res, ));
     const jobDescription = DOMElements.jobDescriptionInput.value;
     const analysisResult = performDeepAnalysis(text, fileName, fileType, jobDescription);
     displayReport(text, analysisResult);
