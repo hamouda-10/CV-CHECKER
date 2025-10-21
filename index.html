@@ -754,8 +754,8 @@ function setTheme(theme) {
 
 
 function setupEventListeners() {
-    DOMElements.uploadButton.addEventListener('click', () => DOMElements.fileInput.click());
-    
+  
+    DOMElements.dropZone.addEventListener('click', () => DOMElements.fileInput.click());
     DOMElements.fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));
     
     ['dragover', 'drop'].forEach(eventName => DOMElements.dropZone.addEventListener(eventName, e => e.preventDefault()));
@@ -861,7 +861,7 @@ function displayReport(text, result) {
     
     DOMElements.cvContent.innerHTML = text.replace(/\n/g, '<br>');
     
-    animateValue(DOMElements.finalScoreEl, 0, result.finalScore, 300);
+    animateValue(DOMElements.finalScoreEl, 0, result.finalScore, 200);
     
     const metricsContainer = document.querySelector('.metrics-grid');
     metricsContainer.innerHTML = '';
